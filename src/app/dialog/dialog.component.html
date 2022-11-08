@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>Dodaj broj telefona</h1>
+<div mat-dialog-content>
+
+ <form [formGroup]="Form">
+
+   <mat-form-field  appearance="fill" >
+   <mat-label >Ime kompanije</mat-label>
+   <input  formControlName="imeKompanije" matInput placeholder="Placeholder">
+   </mat-form-field>
+   <br/>
+
+   <mat-form-field appearance="fill">
+     <mat-label>Broj telefona</mat-label>
+     <input  formControlName="phoneNumber" matInput placeholder="Placeholder">
+   </mat-form-field>
+
+ </form>
+
+
+
+
+
+
+  <div style="padding-bottom: 10px" mat-dialog-actions [align]="'center'">
+    <button style="width: 150px" mat-raised-button color="primary" (click)="addPhoneNumber()">{{actionButton}}</button>
+  </div>
+  <div mat-dialog-actions [align]="'center'">
+    <button style="width: 150px" mat-raised-button color="warn"mat-dialog-close>Zatvori</button>
+
+  </div>
+
+
+
+
+
+
+</div>
